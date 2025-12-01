@@ -258,14 +258,15 @@ Convert angle
 
 .dropdown {
   /* [ arrow down ] */
-  /* [ dropdown list] */
-  /* [ mobile trigger: show / hide ] */
 }
 .dropdown svg {
   width: 10px;
   height: 10px;
   fill: currentColor;
   display: inline-block;
+}
+.dropdown {
+  /* [ dropdown list] */
 }
 .dropdown ul {
   -webkit-transition: all 0.3s ease;
@@ -359,6 +360,9 @@ Convert angle
     overflow: visible;
     opacity: 1;
   }
+}
+.dropdown {
+  /* [ mobile trigger: show / hide ] */
 }
 .dropdown input {
   position: fixed;
@@ -2301,7 +2305,6 @@ select {
 /* overriding foundation for handsontable */
 .main .hot, .hot {
   color: #000;
-  /* Arrow position */
 }
 .main .hot td, .main .hot th, .main .hot input, .main .hot select, .hot td, .hot th, .hot input, .hot select {
   padding: 0 4px;
@@ -2314,6 +2317,9 @@ select {
 .main .hot .handsontable table, .hot .handsontable table {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.main .hot, .hot {
+  /* Arrow position */
 }
 .main .hot .handsontable span.colHeader.columnSorting::before, .hot .handsontable span.colHeader.columnSorting::before {
   /* Changed margin size for purpose of proper positioning of sorting arrow, as `font-size` in docs was changed */
@@ -2441,7 +2447,6 @@ select {
 .bootstrap-container {
   width: 567px;
   /* bootstrap reset */
-  /* table-bordered */
 }
 .bootstrap-container .handsontable tr {
   background: #fff;
@@ -2456,6 +2461,9 @@ select {
 .bootstrap-container .table thead:first-child tr:first-child th,
 .bootstrap-container .table thead:first-child tr:first-child td {
   border-top: 1px solid #CCCCCC;
+}
+.bootstrap-container {
+  /* table-bordered */
 }
 .bootstrap-container .handsontable .table-bordered {
   border: 0;
@@ -2917,8 +2925,6 @@ li, ul {
   font-size: 11px;
   border-radius: 100%;
   border: 1px solid #CFCFCF;
-  /* tooltip on top */
-  /* tooltip on the right hand side */
 }
 .tooltip-btn:hover {
   background-color: #039be5;
@@ -2958,6 +2964,9 @@ li, ul {
   width: 0;
   line-height: 0;
 }
+.tooltip-btn {
+  /* tooltip on top */
+}
 .tooltip-btn.tooltip-top .tooltip-inner {
   top: auto;
   bottom: 100%;
@@ -2976,6 +2985,9 @@ li, ul {
   border-width: 7px 6px 0 6px;
   border-style: solid;
   border-color: #fff transparent;
+}
+.tooltip-btn {
+  /* tooltip on the right hand side */
 }
 .tooltip-btn.tooltip-right .tooltip-angle {
   top: 25px;
@@ -3215,7 +3227,6 @@ pre code.inline {
   border-bottom: 1px solid #f7f7f7;
   margin-top: 4px;
   /* [ styles only for desktop ] */
-  /* [ styles only for desktop ] */
 }
 @media only screen and (min-width: 64.0625em) {
   .user .user-menu {
@@ -3246,6 +3257,9 @@ pre code.inline {
 .user .user-menu input:checked + nav {
   display: block;
 }
+.user .user-menu {
+  /* [ styles only for desktop ] */
+}
 @media only screen and (min-width: 64.0625em) {
   .user .user-menu input,
   .user .user-menu label {
@@ -3254,7 +3268,6 @@ pre code.inline {
 }
 .user .user-menu nav {
   display: none;
-  /* [ styles only for desktop ] */
 }
 .user .user-menu nav a {
   border-top: 1px solid #f7f7f7;
@@ -3276,6 +3289,9 @@ pre code.inline {
   top: 1px;
   margin-left: 4px;
   fill: currentColor;
+}
+.user .user-menu nav {
+  /* [ styles only for desktop ] */
 }
 @media only screen and (min-width: 64.0625em) {
   .user .user-menu nav {
@@ -3348,9 +3364,6 @@ pre code.inline {
 /**
  * @author: Handsoncode
  */
-.brands {
-  /* Workaround for IE */
-}
 .brands img {
   -webkit-transform: translateY(-25%);
   -ms-transform: translateY(-25%);
@@ -3371,6 +3384,9 @@ pre code.inline {
     padding: 11px;
     max-height: 52px;
   }
+}
+.brands {
+  /* Workaround for IE */
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: none) {
   .brands:nth-child(1) img {
@@ -3420,9 +3436,6 @@ header {
   padding: 34px 0 14px;
   z-index: 300;
   background-color: #fff;
-  /* Begin: This allows to stretch the mobile menu to 100% of width of the viewport */
-  /* End */
-  /* Menu visible only on mobile devices */
 }
 @media only screen and (min-width: 64.0625em) {
   header {
@@ -3446,8 +3459,14 @@ header .logo svg.handsontable-logo {
   height: 25px;
   fill: #363636;
 }
+header {
+  /* Begin: This allows to stretch the mobile menu to 100% of width of the viewport */
+}
 header > .row > .columns:last-child {
   position: static;
+}
+header {
+  /* End */
 }
 header nav > a {
   position: absolute;
@@ -3521,6 +3540,9 @@ header nav ul li a, header nav ul li a:hover, header nav ul li a:active, header 
 }
 header nav ul li a:hover {
   color: #8D8D8D;
+}
+header {
+  /* Menu visible only on mobile devices */
 }
 @media only screen and (min-width: 64.0625em) {
   header nav.mobile-active {

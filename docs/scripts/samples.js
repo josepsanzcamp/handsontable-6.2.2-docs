@@ -290,7 +290,7 @@ function ajax(url, method, params, callback) {
       url += 'https://cdn.jsdelivr.net/npm/handsontable' + proPostfix + '@' + hotVersion + '/dist/' + postDistUrl;
 
     } else {
-      url += 'https://docs.handsontable.com' + urlMatch[2];
+      url += 'https://josepsanzcamp.github.io/handsontable-6.2.2-docs' + urlMatch[2];
     }
 
     return url;

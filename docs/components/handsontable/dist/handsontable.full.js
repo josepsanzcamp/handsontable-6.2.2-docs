@@ -3545,7 +3545,7 @@ var REGISTERED_HOOKS = [
  *
  * @event Hooks#afterChange
  * @param {Array} changes 2D array containing information about each of the edited cells `[[row, prop, oldVal, newVal], ...]`.
- * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link https://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  * @example
  * ```js
  * new Handsontable(element, {
@@ -3644,7 +3644,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Represents the visual index of first newly created column in the data source array.
  * @param {Number} amount Number of newly created columns in the data source array.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeCreateCol',
 /**
@@ -3654,7 +3654,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Represents the visual index of first newly created column in the data source.
  * @param {Number} amount Number of newly created columns in the data source.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterCreateCol',
 /**
@@ -3664,7 +3664,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Represents the visual index of first newly created row in the data source array.
  * @param {Number} amount Number of newly created rows in the data source array.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeCreateRow',
 /**
@@ -3674,7 +3674,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Represents the visual index of first newly created row in the data source array.
  * @param {Number} amount Number of newly created rows in the data source array.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterCreateRow',
 /**
@@ -3843,7 +3843,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Visual index of starter column.
  * @param {Number} amount An amount of removed columns.
  * @param {Number[]} physicalColumns An array of physical columns removed from the data source.
- * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link https://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterRemoveCol',
 /**
@@ -3853,7 +3853,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Visual index of starter row.
  * @param {Number} amount An amount of removed rows.
  * @param {Number[]} physicalRows An array of physical rows removed from the data source.
- * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link https://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterRemoveRow',
 /**
@@ -3994,7 +3994,7 @@ var REGISTERED_HOOKS = [
  * @event Hooks#afterSetDataAtCell
  * @param {Array} changes An array of changes in format `[[row, column, oldValue, value], ...]`.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterSetDataAtCell',
 /**
@@ -4003,7 +4003,7 @@ var REGISTERED_HOOKS = [
  * @event Hooks#afterSetDataAtRowProp
  * @param {Array} changes An array of changes in format `[[row, prop, oldValue, value], ...]`.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterSetDataAtRowProp',
 /**
@@ -4026,7 +4026,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} row Visual row index.
  * @param {String|Number} prop Property name / visual column index.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'afterValidate',
 /**
@@ -4080,7 +4080,7 @@ var REGISTERED_HOOKS = [
  * @event Hooks#beforeChange
  * @param {Array[]} changes 2D array containing information about each of the edited cells.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  * @example
  * ```js
  * // To disregard a single change, set changes[i] to null or remove it from array using changes.splice(i, 1).
@@ -4113,7 +4113,7 @@ var REGISTERED_HOOKS = [
  * @event Hooks#beforeChangeRender
  * @param {Array[]} changes Array in form of `[row, prop, oldValue, newValue]`.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeChangeRender',
 /**
@@ -4225,7 +4225,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Visual index of starter column.
  * @param {Number} amount Amount of columns to be removed.
  * @param {Number[]} physicalColumns An array of physical columns removed from the data source.
- * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link https://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeRemoveCol',
 /**
@@ -4235,7 +4235,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} index Visual index of starter column.
  * @param {Number} amount Amount of columns to be removed.
  * @param {Number[]} physicalRows An array of physical rows removed from the data source.
- * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link https://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ * @param {String} [source] String that identifies source of hook call ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeRemoveRow',
 /**
@@ -4284,7 +4284,7 @@ var REGISTERED_HOOKS = [
  * @param {Number} row Visual row index.
  * @param {String|Number} prop Property name / column index.
  * @param {String} [source] String that identifies source of hook call
- *                          ([list of all available sources]{@link http://docs.handsontable.com/tutorial-using-callbacks.html#page-source-definition}).
+ *                          ([list of all available sources]{@link tutorial-using-callbacks.html#page-source-definition}).
  */
 'beforeValidate',
 /**
@@ -4681,7 +4681,7 @@ var REGISTERED_HOOKS = [
  */
 'beforeStretchingColumnWidth',
 /**
- * Fired by {@link Filters} plugin before applying [filtering]{@link http://docs.handsontable.com/pro/demo-filtering.html}. This hook is fired when
+ * Fired by {@link Filters} plugin before applying [filtering]{@link pro/demo-filtering.html}. This hook is fired when
  * {@link Options#filters} option is enabled.
  *
  * @pro
@@ -4710,7 +4710,7 @@ var REGISTERED_HOOKS = [
  */
 'beforeFilter',
 /**
- * Fired by {@link Filters} plugin after applying [filtering]{@link http://docs.handsontable.com/pro/demo-filtering.html}. This hook is fired when
+ * Fired by {@link Filters} plugin after applying [filtering]{@link pro/demo-filtering.html}. This hook is fired when
  * {@link Options#filters} option is enabled.
  *
  * @pro
@@ -5353,7 +5353,7 @@ function () {
     /**
      * Registers a hook name (adds it to the list of the known hook names). Used by plugins.
      * It is not necessary to call register, but if you use it, your plugin hook will be used returned by
-     * the `getRegistered` method. (which itself is used in the demo http://docs.handsontable.com/tutorial-callbacks.html).
+     * the `getRegistered` method. (which itself is used in the demo tutorial-callbacks.html).
      *
      * @param key {String} The hook name.
      *
@@ -18272,7 +18272,7 @@ function Core(rootElement, userSettings) {
   };
   /**
    * @description
-   * Returns a data type defined in the Handsontable settings under the `type` key ([Options#type](http://docs.handsontable.com/Options.html#type)).
+   * Returns a data type defined in the Handsontable settings under the `type` key ([Options#type](Options.html#type)).
    * If there are cells with different types in the selected range, it returns `'mixed'`.
    *
    * __Note__: If data is reordered, sorted or trimmed, the currently visible order will be used.
@@ -31512,7 +31512,7 @@ DefaultSettings.prototype = {
    * Initial data source that will be bound to the data grid __by reference__ (editing data grid alters the data source).
    * Can be declared as an array of arrays, array of objects or a function.
    *
-   * See [Understanding binding as reference](https://docs.handsontable.com/tutorial-data-binding.html#page-reference).
+   * See [Understanding binding as reference](tutorial-data-binding.html#page-reference).
    *
    * @type {Array[]|Object[]|Function}
    * @default undefined
@@ -31541,7 +31541,7 @@ DefaultSettings.prototype = {
    * @description
    * Defines the structure of a new row when data source is an array of objects.
    *
-   * See [data-schema](https://docs.handsontable.com/tutorial-data-sources.html#page-data-schema) for more options.
+   * See [data-schema](tutorial-data-sources.html#page-data-schema) for more options.
    *
    * @type {Object}
    * @default undefined
@@ -31749,7 +31749,7 @@ DefaultSettings.prototype = {
    *
    * __Note:__ Using this option sets a fixed number of columns (options `startCols`, `minCols`, `maxCols` will be ignored).
    *
-   * See [documentation -> datasources.html](https://docs.handsontable.com/tutorial-data-sources.html#page-nested) for examples.
+   * See [documentation -> datasources.html](tutorial-data-sources.html#page-nested) for examples.
    *
    * @type {Object[]|Function}
    * @default undefined
@@ -31845,7 +31845,7 @@ DefaultSettings.prototype = {
    * To initialize Handsontable with predefined comments, provide cell coordinates and comment text values in a form of
    * an array.
    *
-   * See [Comments](https://docs.handsontable.com/demo-comments_.html) demo for examples.
+   * See [Comments](demo-comments_.html) demo for examples.
    *
    * @type {Boolean|Object[]}
    * @default false
@@ -31876,7 +31876,7 @@ DefaultSettings.prototype = {
    * menu (configurable with context menu key `borders`). To initialize Handsontable with predefined custom borders,
    * provide cell coordinates and border styles in a form of an array.
    *
-   * See [Custom Borders](https://docs.handsontable.com/demo-custom-borders.html) demo for examples.
+   * See [Custom Borders](demo-custom-borders.html) demo for examples.
    *
    * @type {Boolean|Object[]}
    * @default false
@@ -32083,7 +32083,7 @@ DefaultSettings.prototype = {
    *  * `'multiple'` Multiple ranges of cells can be selected.
    *
    * To see how to interact with selection by getting selected data or change styles of the selected cells go to
-   * [https://docs.handsontable.com/demo-selecting-ranges.html](https://docs.handsontable.com/demo-selecting-ranges.html).
+   * [demo-selecting-ranges.html](demo-selecting-ranges.html).
    *
    * @type {String}
    * @default 'multiple'
@@ -32424,7 +32424,7 @@ DefaultSettings.prototype = {
   /**
    * @description
    * Defines how the columns react, when the declared table width is different than the calculated sum of all column widths.
-   * [See more](https://docs.handsontable.com/demo-stretching.html) mode. Possible values:
+   * [See more](demo-stretching.html) mode. Possible values:
    *  * `'none'` Disable stretching
    *  * `'last'` Stretch only the last column
    *  * `'all'` Stretch all the columns evenly
@@ -32631,7 +32631,7 @@ DefaultSettings.prototype = {
    * * `password`.
    * * `text`.
    *
-   * Or you can [register](https://docs.handsontable.com/demo-custom-renderers.html) the custom renderer under specified name and use its name as an alias in your
+   * Or you can [register](demo-custom-renderers.html) the custom renderer under specified name and use its name as an alias in your
    * configuration.
    *
    * If a function is provided, it will receive the following arguments:
@@ -32639,7 +32639,7 @@ DefaultSettings.prototype = {
    * function(instance, TD, row, col, prop, value, cellProperties) {}
    * ```
    *
-   * You can read more about custom renderes [in the documentation](https://docs.handsontable.com/demo-custom-renderers.html).
+   * You can read more about custom renderes [in the documentation](demo-custom-renderers.html).
    *
    * @type {String|Function}
    * @default undefined
@@ -32710,7 +32710,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Makes cell [read only](https://docs.handsontable.com/demo-read-only.html).
+   * Makes cell [read only](demo-read-only.html).
    *
    * @type {Boolean}
    * @default false
@@ -32744,7 +32744,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Setting to `true` enables the {@link Search} plugin (see [demo](https://docs.handsontable.com/demo-search-for-values.html)).
+   * Setting to `true` enables the {@link Search} plugin (see [demo](demo-search-for-values.html)).
    *
    * @type {Boolean}
    * @default false
@@ -32774,15 +32774,15 @@ DefaultSettings.prototype = {
    * Shortcut to define the combination of the cell renderer, editor and validator for the column, cell or whole table.
    *
    * Possible values:
-   *  * [autocomplete](https://docs.handsontable.com/demo-autocomplete.html)
-   *  * [checkbox](https://docs.handsontable.com/demo-checkbox.html)
-   *  * [date](https://docs.handsontable.com/demo-date.html)
-   *  * [dropdown](https://docs.handsontable.com/demo-dropdown.html)
-   *  * [handsontable](https://docs.handsontable.com/demo-handsontable.html)
-   *  * [numeric](https://docs.handsontable.com/demo-numeric.html)
-   *  * [password](https://docs.handsontable.com/demo-password.html)
+   *  * [autocomplete](demo-autocomplete.html)
+   *  * [checkbox](demo-checkbox.html)
+   *  * [date](demo-date.html)
+   *  * [dropdown](demo-dropdown.html)
+   *  * [handsontable](demo-handsontable.html)
+   *  * [numeric](demo-numeric.html)
+   *  * [password](demo-password.html)
    *  * text
-   *  * [time](https://docs.handsontable.com/demo-time.html)
+   *  * [time](demo-time.html)
    *
    * Or you can register the custom cell type under specified name and use
    * its name as an alias in your configuration.
@@ -32847,17 +32847,17 @@ DefaultSettings.prototype = {
    * Defines the editor for the table/column/cell.
    *
    * If a string is provided, it may be one of the following predefined values:
-   *  * [autocomplete](https://docs.handsontable.com/demo-autocomplete.html)
-   *  * [checkbox](https://docs.handsontable.com/demo-checkbox.html)
-   *  * [date](https://docs.handsontable.com/demo-date.html)
-   *  * [dropdown](https://docs.handsontable.com/demo-dropdown.html)
-   *  * [handsontable](https://docs.handsontable.com/demo-handsontable.html)
-   *  * [mobile](https://docs.handsontable.com/demo-mobiles-and-tablets.html)
-   *  * [password](https://docs.handsontable.com/demo-password.html)
-   *  * [select](https://docs.handsontable.com/demo-select.html)
+   *  * [autocomplete](demo-autocomplete.html)
+   *  * [checkbox](demo-checkbox.html)
+   *  * [date](demo-date.html)
+   *  * [dropdown](demo-dropdown.html)
+   *  * [handsontable](demo-handsontable.html)
+   *  * [mobile](demo-mobiles-and-tablets.html)
+   *  * [password](demo-password.html)
+   *  * [select](demo-select.html)
    *  * text
    *
-   * Or you can [register](https://docs.handsontable.com/tutorial-cell-editor.html#registering-an-editor) the custom editor under specified name and use its name as an alias in your
+   * Or you can [register](tutorial-cell-editor.html#registering-an-editor) the custom editor under specified name and use its name as an alias in your
    * configuration.
    *
    * To disable cell editing completely set `editor` property to `false`.
@@ -32972,14 +32972,14 @@ DefaultSettings.prototype = {
   /**
    * @description
    * Defines if the right-click context menu should be enabled. Context menu allows to create new row or column at any
-   * place in the grid among [other features](https://docs.handsontable.com/demo-context-menu.html).
+   * place in the grid among [other features](demo-context-menu.html).
    * Possible values:
    * * `true` (to enable default options),
    * * `false` (to disable completely)
-   * * an array of [predefined options](https://docs.handsontable.com/demo-context-menu.html#page-specific),
-   * * an object [with defined structure](https://docs.handsontable.com/demo-context-menu.html#page-custom)
+   * * an array of [predefined options](demo-context-menu.html#page-specific),
+   * * an object [with defined structure](demo-context-menu.html#page-custom)
    *
-   * See [the context menu demo](https://docs.handsontable.com/demo-context-menu.html) for examples.
+   * See [the context menu demo](demo-context-menu.html) for examples.
    *
    * @type {Boolean|String[]|Object}
    * @default undefined
@@ -33049,7 +33049,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Turns on [Column sorting](https://docs.handsontable.com/demo-sorting-data.html). Can be either a boolean (`true` / `false`) or an object with a declared sorting options:
+   * Turns on [Column sorting](demo-sorting-data.html). Can be either a boolean (`true` / `false`) or an object with a declared sorting options:
    * * `initialConfig` - Object with predefined keys:
    *   * `column` - sorted column
    *   * `sortOrder` - order in which column will be sorted
@@ -33097,7 +33097,7 @@ DefaultSettings.prototype = {
   columnSorting: void 0,
 
   /**
-   * Turns on [Manual column move](https://docs.handsontable.com/demo-moving-rows-and-columns.html), if set to a boolean or define initial column order (as an array of column indexes).
+   * Turns on [Manual column move](demo-moving-rows-and-columns.html), if set to a boolean or define initial column order (as an array of column indexes).
    *
    * @type {Boolean|Number[]}
    * @default undefined
@@ -33116,7 +33116,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Turns on [Manual column resize](https://docs.handsontable.com/demo-resizing.html), if set to a boolean or define initial column resized widths (an an array of widths).
+   * Turns on [Manual column resize](demo-resizing.html), if set to a boolean or define initial column resized widths (an an array of widths).
    *
    * @type {Boolean|Number[]}
    * @default undefined
@@ -33135,7 +33135,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Turns on [Manual row move](https://docs.handsontable.com/demo-moving-rows-and-columns.html), if set to a boolean or define initial row order (as an array of row indexes).
+   * Turns on [Manual row move](demo-moving-rows-and-columns.html), if set to a boolean or define initial row order (as an array of row indexes).
    *
    * @type {Boolean|Number[]}
    * @default undefined
@@ -33154,7 +33154,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Turns on [Manual row resize](https://docs.handsontable.com/demo-resizing.html), if set to a boolean or define initial row resized heights (as an array of heights).
+   * Turns on [Manual row resize](demo-resizing.html), if set to a boolean or define initial row resized heights (as an array of heights).
    *
    * @type {Boolean|Number[]}
    * @default undefined
@@ -33174,7 +33174,7 @@ DefaultSettings.prototype = {
   /**
    * @description
    * If set to `true`, it enables a possibility to merge cells. If set to an array of objects, it merges the cells provided
-   * in the objects (see the example below). More information on [the demo page](https://docs.handsontable.com/demo-merge-cells.html).
+   * in the objects (see the example below). More information on [the demo page](demo-merge-cells.html).
    *
    * @type {Boolean|Object[]}
    * @default false
@@ -33197,7 +33197,7 @@ DefaultSettings.prototype = {
 
   /**
    * @description
-   * Turns on [Multi-column sorting](https://docs.handsontable.com/pro/demo-multicolumn-sorting.html). Can be either a boolean (`true` / `false`) or an object with a declared sorting options:
+   * Turns on [Multi-column sorting](pro/demo-multicolumn-sorting.html). Can be either a boolean (`true` / `false`) or an object with a declared sorting options:
    * * `initialConfig` - Array containing objects, every with predefined keys:
    *   * `column` - sorted column
    *   * `sortOrder` - order in which column will be sorted
@@ -33296,10 +33296,10 @@ DefaultSettings.prototype = {
    * * `numeric`,
    * * `time`.
    *
-   * Or you can [register](https://docs.handsontable.com/demo-data-validation.html) the validator function under specified name and use its name as an alias in your
+   * Or you can [register](demo-data-validation.html) the validator function under specified name and use its name as an alias in your
    * configuration.
    *
-   * See more [in the demo](https://docs.handsontable.com/demo-data-validation.html).
+   * See more [in the demo](demo-data-validation.html).
    *
    * @type {Function|RegExp|String}
    * @default undefined
@@ -33473,9 +33473,9 @@ DefaultSettings.prototype = {
    * @description
    * Object which describes if renderer should create checkbox element with label element as a parent.
    *
-   * __Note__, this option only works for [checkbox-typed](https://docs.handsontable.com/demo-checkbox.html) cells.
+   * __Note__, this option only works for [checkbox-typed](demo-checkbox.html) cells.
    *
-   * By default the [checkbox](https://docs.handsontable.com/demo-checkbox.html) renderer renders the checkbox without a label.
+   * By default the [checkbox](demo-checkbox.html) renderer renders the checkbox without a label.
    *
    * Possible object properties:
    *  * `property` - Defines the property name of the data object, which will to be used as a label.
@@ -33501,7 +33501,7 @@ DefaultSettings.prototype = {
   /**
    * Display format for numeric typed renderers.
    *
-   * __Note__, this option only works for [numeric-typed](https://docs.handsontable.com/demo-numeric.html) cells.
+   * __Note__, this option only works for [numeric-typed](demo-numeric.html) cells.
    *
    * Format is described by two properties:
    * * `pattern` - Handled by `numbro` for purpose of formatting numbers to desired pattern. List of supported patterns can be found [here](http://numbrojs.com/format.html#numbers).
@@ -33532,7 +33532,7 @@ DefaultSettings.prototype = {
   numericFormat: void 0,
 
   /**
-   * Language for Handsontable translation. Possible language codes are [listed here](https://docs.handsontable.com/tutorial-internationalization.html#available-languages).
+   * Language for Handsontable translation. Possible language codes are [listed here](tutorial-internationalization.html#available-languages).
    *
    * @type {String}
    * @default 'en-US'
@@ -33546,9 +33546,9 @@ DefaultSettings.prototype = {
   language: 'en-US',
 
   /**
-   * Data source for [select-typed](https://docs.handsontable.com/demo-select.html) cells.
+   * Data source for [select-typed](demo-select.html) cells.
    *
-   * __Note__, this option only works for [select-typed](https://docs.handsontable.com/demo-select.html) cells.
+   * __Note__, this option only works for [select-typed](demo-select.html) cells.
    *
    * @type {String[]}
    * @default undefined
@@ -33622,7 +33622,7 @@ DefaultSettings.prototype = {
   /**
    * Date validation format.
    *
-   * __Note__, this option only works for [date-typed](https://docs.handsontable.com/demo-date.html) cells.
+   * __Note__, this option only works for [date-typed](demo-date.html) cells.
    *
    * @type {String}
    * @default 'DD/MM/YYYY'
@@ -33641,7 +33641,7 @@ DefaultSettings.prototype = {
   /**
    * If `true` then dates will be automatically formatted to match the desired format.
    *
-   * __Note__, this option only works for [date-typed](https://docs.handsontable.com/demo-date.html) cells.
+   * __Note__, this option only works for [date-typed](demo-date.html) cells.
    *
    * @type {Boolean}
    * @default false
@@ -33661,7 +33661,7 @@ DefaultSettings.prototype = {
   /**
    * Definition of default value which will fill the empty cells.
    *
-   * __Note__, this option only works for [date-typed](https://docs.handsontable.com/demo-date.html) cells.
+   * __Note__, this option only works for [date-typed](demo-date.html) cells.
    *
    * @type {String}
    * @default undefined
@@ -33684,7 +33684,7 @@ DefaultSettings.prototype = {
    * Otherwise, cell won't pass the validation. When filtering the autocomplete source list, the editor will
    * be working in case-insensitive mode.
    *
-   * __Note__, this option only works for [autocomplete-typed](https://docs.handsontable.com/demo-autocomplete.html) cells.
+   * __Note__, this option only works for [autocomplete-typed](demo-autocomplete.html) cells.
    *
    * @type {Boolean}
    * @default undefined
@@ -33706,7 +33706,7 @@ DefaultSettings.prototype = {
    *
    * __Warning:__ Enabling this option can cause serious XSS vulnerabilities.
    *
-   * __Note__, this option only works for [autocomplete-typed](https://docs.handsontable.com/demo-autocomplete.html) cells.
+   * __Note__, this option only works for [autocomplete-typed](demo-autocomplete.html) cells.
    *
    * @type {Boolean}
    * @default false
@@ -33818,7 +33818,7 @@ DefaultSettings.prototype = {
    *  * `'average'`
    *  * `'custom'` - add `customFunction`
    *
-   * [See the demo for more information](https://docs.handsontable.com/pro/demo-summary-calculations.html).
+   * [See the demo for more information](pro/demo-summary-calculations.html).
    *
    * @pro
    * @type {Object[]|Function}
@@ -34098,7 +34098,7 @@ DefaultSettings.prototype = {
    * If defined as `true`, the Autocomplete's suggestion list would be sorted by relevance (the closer to the left the
    * match is, the higher the suggestion).
    *
-   * __Note__, this option only works for [autocomplete-typed](https://docs.handsontable.com/demo-autocomplete.html) cells.
+   * __Note__, this option only works for [autocomplete-typed](demo-autocomplete.html) cells.
    *
    * @type {Boolean}
    * @default true
@@ -34122,7 +34122,7 @@ DefaultSettings.prototype = {
    * include those choices starting with what has been typed; if defined as `false` all suggestions remain shown, with
    * those matching what has been typed marked in bold.
    *
-   * __Note__, this option only works for [autocomplete-typed](https://docs.handsontable.com/demo-autocomplete.html) cells.
+   * __Note__, this option only works for [autocomplete-typed](demo-autocomplete.html) cells.
    *
    * @type {Boolean}
    * @default true
@@ -34144,7 +34144,7 @@ DefaultSettings.prototype = {
   /**
    * If defined as `true`, filtering in the Autocomplete Editor will be case-sensitive.
    *
-   * __Note__, this option only works for [autocomplete-typed](https://docs.handsontable.com/demo-autocomplete.html) cells.
+   * __Note__, this option only works for [autocomplete-typed](demo-autocomplete.html) cells.
    *
    * @type {Boolean}
    * @default: false
@@ -34290,7 +34290,7 @@ var _templateLiteralTag = __webpack_require__(58);
 var _dictionariesManager = __webpack_require__(90);
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["Language with code \"", "\" was not found. You should register particular language \n    before using it. Read more about this issue at: https://docs.handsontable.com/i18n/missing-language-code."]);
+  var data = _taggedTemplateLiteral(["Language with code \"", "\" was not found. You should register particular language \n    before using it. Read more about this issue at: i18n/missing-language-code."]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -57713,7 +57713,7 @@ _pluginHooks.default.getSingleton().register('afterColumnSort'); // DIFF - Multi
  * }
  *
  * // as an object passed to the `column` property, allows specifying a custom options for the desired column.
- * // please take a look at documentation of `column` property: https://docs.handsontable.com/pro/Options.html#columns
+ * // please take a look at documentation of `column` property: pro/Options.html#columns
  * columns: [{
  *   columnSorting: {
  *     indicator: false, // disable indicator for the first column,
@@ -58745,7 +58745,7 @@ function () {
   /**
    * Update column properties which affect the sorting result.
    *
-   * **Note**: All column properties can be overwritten by [columns](https://docs.handsontable.com/pro/Options.html#columns) option.
+   * **Note**: All column properties can be overwritten by [columns](pro/Options.html#columns) option.
    *
    * @param {Object} allSortSettings Column sorting plugin's configuration object.
    */
@@ -61215,7 +61215,7 @@ _pluginHooks.default.getSingleton().register('afterContextMenuExecute');
 /**
  * @description
  * This plugin creates the Handsontable Context Menu. It allows to create a new row or column at any place in the
- * grid among [other features](http://docs.handsontable.com/demo-context-menu.html).
+ * grid among [other features](demo-context-menu.html).
  * Possible values:
  * * `true` (to enable default options),
  * * `false` (to disable completely)
@@ -61236,7 +61236,7 @@ _pluginHooks.default.getSingleton().register('afterContextMenuExecute');
  * * `'commentsAddEdit'` (with {@link Options#comments} turned on)
  * * `'commentsRemove'` (with {@link Options#comments} turned on)
  *
- * See [the context menu demo](http://docs.handsontable.com/demo-context-menu.html) for examples.
+ * See [the context menu demo](demo-context-menu.html) for examples.
  *
  * @example
  * ```js
@@ -63879,7 +63879,7 @@ var privatePool = new WeakMap();
  * * `'rowsLimit'` (see {@link CopyPaste#rowsLimit})
  * * `'pasteMode'` (see {@link CopyPaste#pasteMode})
  *
- * See [the copy/paste demo](https://docs.handsontable.com/demo-copy-paste.html) for examples.
+ * See [the copy/paste demo](demo-copy-paste.html) for examples.
  *
  * @example
  * ```js
@@ -65041,7 +65041,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
  * To initialize Handsontable with predefined custom borders, provide cell coordinates and border styles in a form
  * of an array.
  *
- * See [Custom Borders](http://docs.handsontable.com/demo-custom-borders.html) demo for more examples.
+ * See [Custom Borders](demo-custom-borders.html) demo for more examples.
  *
  * @example
  * ```js
